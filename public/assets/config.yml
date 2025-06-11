@@ -15,14 +15,34 @@ header: true
 # Footer
 footer: '<p>Built with ❤️ by the Neova team. Find us on <a href="https://github.com/neova-protocol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i> GitHub</a>.</p>'
 
+# Optional theme customization
+theme: neon
+
 # Layout
-columns: "auto" # "auto" or a factor of 12 (1, 2, 3, 4, 6, 12)
+columns: "3" # "auto" or a factor of 12 (1, 2, 3, 4, 6, 12)
 connectivityCheck: true
 
 # Defaults
 defaults:
-  layout: columns # or 'list'
+  layout: list # or 'columns'
   colorTheme: auto # 'auto', 'light', or 'dark'
+
+# Optional message
+message:
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "👋 Welcome to the Neova Dashboard!"
+  content: "This is your central hub for all Neova services and applications. If you need to modify this dashboard, you can edit the <code>public/assets/config.yml</code> file."
+
+# Optional navbar
+links:
+  - name: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/neova-protocol"
+    target: "_blank"
+  - name: "Documentation"
+    icon: "fas fa-book"
+    url: "https://docs.neova.io"
+    target: "_blank"
 
 # Services.
 # Services are grouped by section.
