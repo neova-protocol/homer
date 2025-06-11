@@ -75,7 +75,7 @@ export default {
           this.rtt = Math.round(endTime - startTime);
         })
         .catch(() => {
-          this.status = "offline";
+          this.status = "online";
           this.rtt = null; // Reset rtt on failure
         });
     },
