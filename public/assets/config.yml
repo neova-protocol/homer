@@ -51,7 +51,7 @@ links:
 # See Homer's documentation for more details.
 services:
   # Group 1: Web Frontends
-  - name: "Web Frontends"
+  - name: "Web Frontends (Production)"
     icon: "fas fa-globe"
     items:
       - name: "Landing Page"
@@ -61,20 +61,6 @@ services:
         tagstyle: "is-success"
         url: "https://neova.io"
         target: "_blank"
-      - name: "Landing Page"
-        logo: "assets/icons/logo_neova.svg"
-        subtitle: "Staging"
-        tag: "staging"
-        tagstyle: "is-warning"
-        url: "https://staging.neova.io"
-        target: "_blank"
-      - name: "Landing Page"
-        logo: "assets/icons/logo_neova.svg"
-        subtitle: "Development"
-        tag: "dev"
-        tagstyle: "is-info"
-        url: "https://dev.neova.io"
-        target: "_blank"
       - name: "Drive"
         icon: "fas fa-cloud"
         subtitle: "Production"
@@ -82,12 +68,50 @@ services:
         tagstyle: "is-success"
         url: "https://drive.neova.io"
         target: "_blank"
+      - name: "Worker"
+        icon: "fas fa-gears"
+        subtitle: "Production"
+        tag: "prod"
+        tagstyle: "is-success"
+        url: "https://worker.neova.io"
+        target: "_blank"
+
+  # Group 2: Staging Environment
+  - name: "Staging Environment"
+    icon: "fas fa-flask-vial"
+    items:
+      - name: "Landing Page"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Staging"
+        tag: "staging"
+        tagstyle: "is-warning"
+        url: "https://staging.neova.io"
+        target: "_blank"
       - name: "Drive"
         icon: "fas fa-cloud"
         subtitle: "Staging"
         tag: "staging"
         tagstyle: "is-warning"
         url: "https://drive-staging.neova.io"
+        target: "_blank"
+      - name: "Worker"
+        icon: "fas fa-gears"
+        subtitle: "Staging"
+        tag: "staging"
+        tagstyle: "is-warning"
+        url: "https://worker-staging.neova.io"
+        target: "_blank"
+
+  # Group 3: Development Environment
+  - name: "Development Environment"
+    icon: "fas fa-code"
+    items:
+      - name: "Landing Page"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Development"
+        tag: "dev"
+        tagstyle: "is-info"
+        url: "https://dev.neova.io"
         target: "_blank"
       - name: "Drive"
         icon: "fas fa-cloud"
@@ -98,27 +122,13 @@ services:
         target: "_blank"
       - name: "Worker"
         icon: "fas fa-gears"
-        subtitle: "Production"
-        tag: "prod"
-        tagstyle: "is-success"
-        url: "https://worker.neova.io"
-        target: "_blank"
-      - name: "Worker"
-        icon: "fas fa-gears"
-        subtitle: "Staging"
-        tag: "staging"
-        tagstyle: "is-warning"
-        url: "https://worker-staging.neova.io"
-        target: "_blank"
-      - name: "Worker"
-        icon: "fas fa-gears"
         subtitle: "Development"
         tag: "dev"
         tagstyle: "is-info"
         url: "https://worker-dev.neova.io"
         target: "_blank"
 
-  # Group 2: Core Services
+  # Group 4: Core Services
   - name: "Core Services"
     icon: "fas fa-server"
     items:
@@ -164,7 +174,7 @@ services:
         url: "https://monitoring.neova.io"
         target: "_blank"
 
-  # Group 3: Internal Services
+  # Group 5: Internal Services
   - name: "Internal Services"
     icon: "fas fa-tools"
     items:
@@ -201,7 +211,7 @@ services:
         url: "https://kpi.neodev.cc"
         target: "_blank"
 
-  # Group 4: APIs
+  # Group 6: APIs
   - name: "APIs"
     icon: "fas fa-code-branch"
     items:
@@ -241,7 +251,7 @@ services:
         url: "https://waitlist-api.neova.io"
         type: "Ping"
   
-  # Group 5: External Services
+  # Group 7: External Services
   - name: "External Services"
     icon: "fas fa-external-link-alt"
     items:
@@ -251,7 +261,7 @@ services:
         url: "https://github.com/orgs/neova-protocol/projects/12"
         target: "_blank"
       - name: "Sentry"
-        logo: "assets/tools/sentry.png"
+        logo: "assets/icons/logo_neova.svg"
         subtitle: "Error Tracking"
         url: "https://neova-s5.sentry.io/"
         target: "_blank" 
