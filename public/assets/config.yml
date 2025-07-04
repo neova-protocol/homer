@@ -122,6 +122,12 @@ services:
         subtitle: "Monitoring"
         url: "https://monitoring.neova.io"
         target: "_blank"
+      - name: "RabbitMQ"
+        logo: "assets/icons/logo_rabbitmq.svg"
+        subtitle: "Rabbit MQ"
+        target: "_blank"
+        url: "https://queuer.neova.io/#/queues"
+        
 
   # Group 3: Web Frontends (Production)
   - name: "Web Frontends (Production)"
