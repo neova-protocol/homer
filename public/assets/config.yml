@@ -1,0 +1,258 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v6/search for icons options
+
+# Page metadata
+title: "Neova Dashboard"
+subtitle: "Services Status"
+# documentTitle: "Welcome" # Customize the browser tab text
+logo: "assets/icons/logo_neova.svg" # You can use a local path or a URL
+# icon: "fas fa-skull-crossbones"
+
+# Header
+header: true
+
+# Footer
+footer: '<p>Built with ❤️ by the Neova team. Find us on <a href="https://github.com/neova-protocol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i> GitHub</a>.</p>'
+
+# Optional theme customization
+theme: neon
+
+# Layout
+columns: "3" # "auto" or a factor of 12 (1, 2, 3, 4, 6, 12)
+connectivityCheck: true
+
+# Defaults
+defaults:
+  layout: list # or 'columns'
+  colorTheme: dark # 'auto', 'light', or 'dark'
+
+# Optional message
+message:
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "🚀 Welcome to the Neova Command Center"
+  content: "This is your real-time dashboard for the entire Neova ecosystem. Retrieve all the services here."
+
+# Optional navbar
+links:
+  - name: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/neova-protocol"
+    target: "_blank"
+  - name: "Discord"
+    icon: "fab fa-discord"
+    url: "https://discord.com/invite/neova"
+    target: "_blank"
+  - name: "X (Twitter)"
+    icon: "fa-brands fa-x-twitter"
+    url: "https://x.com/neova_protocol"
+    target: "_blank"
+
+# Services.
+# Services are grouped by section.
+# You can use FontAwesome 6 icons (e.g., 'fas fa-server', 'fab fa-github').
+# For services with status checks (Ping, Portainer, UptimeKuma...), you might need to configure CORS on the target service.
+# See Homer's documentation for more details.
+services:
+  # Group 1: Internal Services
+  - name: "Internal Services (Node 1)"
+    icon: "fas fa-tools"
+    items:
+      - name: "Uptime Kuma"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Status Monitoring"
+        url: "https://kuma.neodev.cc"
+        target: "_blank"
+      - name: "Umami"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Website Analytics"
+        url: "https://umami.neodev.cc"
+        target: "_blank"
+      - name: "Vaultwarden"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Password Manager"
+        url: "https://vaultwarden.neodev.cc"
+        target: "_blank"
+      - name: "Coolify"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "PaaS"
+        url: "https://neodev.cc"
+        target: "_blank"
+      - name: "Homer"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "This Dashboard"
+        url: "https://homer.neodev.cc"
+      - name: "Metabase"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "KPI Dashboard"
+        url: "https://kpi.neodev.cc"
+        target: "_blank"
+      - name: "Nexus"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Container Registry"
+        url: "https://nexus.neodev.cc"
+        target: "_blank"
+      - name: "Infisical"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Secret Management"
+        url: "https://secrets.neodev.cc"
+        target: "_blank"
+
+  # Group 2: Core Services
+  - name: "Core Services (Master)"
+    icon: "fas fa-server"
+    items:
+      - name: "Keycloak"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Authentication"
+        url: "https://auth.neova.io"
+        target: "_blank"
+      - name: "RabbitMQ"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Message Broker"
+        url: "https://rabbitmq.neodev.cc"
+        target: "_blank"
+      - name: "Rewards App"
+        icon: "fas fa-gift"
+        subtitle: "Rewards Program"
+        url: "https://rewards-app.neova.io"
+        target: "_blank"
+      - name: "IPFS Cluster"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "IPFS Cluster"
+        url: "https://cluster.neodev.cc"
+        target: "_blank"
+      - name: "IPFS Gateway"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "IPFS Gateway"
+        url: "https://gateway.neodev.cc"
+        target: "_blank"
+      - name: "IPFS API"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "IPFS API"
+        url: "https://ipfs-api.neodev.cc"
+        target: "_blank"
+
+  # Group 3: Web Frontends (Production)
+  - name: "Web Frontends (Production)"
+    icon: "fas fa-globe"
+    items:
+      - name: "Landing Page"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Production"
+        tag: "prod"
+        tagstyle: "is-success"
+        url: "https://neova.io"
+        target: "_blank"
+      - name: "Drive"
+        icon: "fas fa-cloud"
+        subtitle: "Production"
+        tag: "prod"
+        tagstyle: "is-success"
+        url: "https://drive.neova.io"
+        target: "_blank"
+      - name: "Worker"
+        icon: "fas fa-gears"
+        subtitle: "Production"
+        tag: "prod"
+        tagstyle: "is-success"
+        url: "https://worker.neova.io"
+        target: "_blank"
+      - name: "Docs"
+        icon: "fas fa-book"
+        subtitle: "Documentation"
+        url: "https://docs.neova.io"
+        target: "_blank"
+      - name: "Litepaper"
+        icon: "fas fa-file-pdf"
+        subtitle: "Project Litepaper"
+        url: "https://litepaper.neova.io"
+        target: "_blank"
+  
+  # Group 4: External Services
+  - name: "External Services"
+    icon: "fas fa-external-link-alt"
+    items:
+      - name: "GitHub Project"
+        icon: "fab fa-github"
+        subtitle: "Project Kanban Board"
+        url: "https://github.com/orgs/neova-protocol/projects/12"
+        target: "_blank"
+      - name: "Sentry"
+        logo: "assets/icons/logo_neova.svg"
+        subtitle: "Error Tracking"
+        url: "https://neova-s5.sentry.io/"
+        target: "_blank"
+
+  # Group 5: Staging Environment
+  # - name: "Staging Environment"
+  #   icon: "fas fa-flask-vial"
+  #   items:
+  #     - name: "Landing Page"
+  #       logo: "assets/icons/logo_neova.svg"
+  #       subtitle: "Staging"
+  #       tag: "staging"
+  #       tagstyle: "is-warning"
+  #       url: "https://staging.neova.io"
+  #       target: "_blank"
+  #     - name: "Drive"
+  #       icon: "fas fa-cloud"
+  #       subtitle: "Staging"
+  #       tag: "staging"
+  #       tagstyle: "is-warning"
+  #       url: "https://drive-staging.neova.io"
+  #       target: "_blank"
+  #     - name: "Worker"
+  #       icon: "fas fa-gears"
+  #       subtitle: "Staging"
+  #       tag: "staging"
+  #       tagstyle: "is-warning"
+  #       url: "https://worker-staging.neova.io"
+  #       target: "_blank"
+
+  # Group 7: APIs (Production)
+  # - name: "APIs (Production)"
+  #   icon: "fas fa-code-branch"
+  #   items:
+  #     - name: "User API"
+  #       icon: "fas fa-user"
+  #       subtitle: "Production"
+  #       url: "https://user-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "Drive API"
+  #       icon: "fas fa-cloud"
+  #       subtitle: "Production"
+  #       url: "https://drive-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "Blob API"
+  #       icon: "fas fa-database"
+  #       subtitle: "Production"
+  #       url: "https://blob-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "KMS API"
+  #       icon: "fas fa-key"
+  #       subtitle: "Production"
+  #       url: "https://kms-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "Peer API"
+  #       icon: "fas fa-network-wired"
+  #       subtitle: "Production"
+  #       url: "https://peer-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "Protocol API"
+  #       icon: "fas fa-file-contract"
+  #       subtitle: "Production"
+  #       url: "https://protocol-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
+  #     - name: "Waitlist API"
+  #       icon: "fas fa-list-ol"
+  #       subtitle: "Production"
+  #       url: "https://waitlist-api.neova.io"
+  #       tag: "prod"
+  #       tagstyle: "is-success"
